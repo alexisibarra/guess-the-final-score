@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "BEBAS";
+  src: url("./fonts/BEBAS__.ttf"); }
+* {
+  font-family: "BEBAS"; }
+
 body, html {
   height: 100%; }
 
 body {
   height: 100%;
-  background-image: url("http://placehold.it/600x300");
+  background-image: url("images/background cover-small.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -14,7 +20,6 @@ body {
   height: 100%; }
   .main-row .form-container {
     position: relative;
-    background-color: white;
     height: 100%;
     padding: 20px 10px; }
     .main-row .form-container .main-title, .main-row .form-container .vs {
