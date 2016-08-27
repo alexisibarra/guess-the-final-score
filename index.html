@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the final score</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="main-row row">
+    <div class="form-container col-sm-6 col-sm-offset-6 text-center">
+      <img class="centered main-partner" src="http://placehold.it/300x70" alt="">
+      <h1 class="main-title">Guess the final score</h1>
+      <div class="vs centered">
+        <img src="http://placehold.it/100x100" alt="">
+        <span>vs</span>
+        <img src="http://placehold.it/100x100" alt="">
+      </div>
+
+      <div class="form row">
+        <form action="sender.php" method="post">
+          <div class="col-sm-4 col-sm-offset-2">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" id="name" placeholder="NAME" required="true">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="EMAIL"  required="true">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="marker" id="marker" placeholder="MARKER" required="true">
+            </div>
+          </div>
+          <div class=col-sm-4>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  required="true"> Rules and cond
+              </label>
+              <span>Terms and conditions of the promotion</span>
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="prizes">
+        <span class="tag">Prizes</span>
+        <img src="http://placehold.it/70x70" alt="">
+        <img src="http://placehold.it/70x70" alt="">
+        <img src="http://placehold.it/70x70" alt="">
+      </div>
+
+      <div class="sponsors text-center">
+        <img src="http://placehold.it/70x70" alt="">
+        <img src="http://placehold.it/70x70" alt="">
+        <img src="http://placehold.it/70x70" alt="">
+        <img src="http://placehold.it/70x70" alt="">
+        <img src="http://placehold.it/70x70" alt="">
+        <img src="http://placehold.it/70x70" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

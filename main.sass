@@ -1,0 +1,97 @@
+$blue: #3F51B5
+$red: red
+
+body, html
+  height: 100%
+body
+  height: 100%
+  background-image: url('http://placehold.it/600x300')
+  background-repeat: no-repeat
+  background-size: cover
+.centered
+  margin: 0 auto
+.main-row
+  height: 100%
+  .form-container
+    position: relative
+    background-color: white
+    height: 100%
+    padding: 20px 10px
+    .main-partner
+      // position: fixed
+      // top: 50px
+    .main-title
+    .main-title, .vs
+      text-transform: uppercase
+      color: $red
+      font-size: 32px
+    .vs
+      margin: 30px
+      span
+        margin: 50px
+    .form
+      form
+        .form-group
+          .form-control
+            border: 2px solid $blue
+            color: $blue
+        .checkbox
+          margin-top: 15px
+          span
+            font-size: 8pt
+            color: $red
+          label
+            display: block
+            text-transform: uppercase
+            color: $blue
+            font-weight: bold
+            font-size: 12pt
+            input[type="checkbox"]
+              $checkbox-width: 25px
+              $checkbox-height: 25px
+              $top-offset: -6px
+              $left-offset: -10px
+              &:before
+                left: $left-offset
+                top: $top-offset
+                position: relative
+                display: block
+                width: $checkbox-width
+                height: $checkbox-height
+                border: 8px solid $blue
+                content: ""
+                background: #FFF
+              &:after
+                left: $left-offset
+                top: -$checkbox-height+$top-offset
+                padding-top: 3px
+                padding-left: 5px
+                position: relative
+                display: block
+                width: $checkbox-width
+                height: $checkbox-height
+                border: 2px solid $blue
+                content: ""
+                background-color: white
+                background-repeat: no-repeat
+              &:checked:after
+                content: 'X'
+                color: $blue
+                font-weight: bold
+        button[type="submit"]
+          background-color: $red
+          font-size: 12pt
+          color: white
+          text-transform: uppercase
+          font-weight: bold
+    .prizes
+      margin-bottom: 40px
+      .tag
+        text-transform: uppercase
+        color: $red
+        font-size: 26px
+      *
+        margin-right: 25px
+    .sponsors
+      img
+        margin-right: 25px

@@ -1,0 +1,17 @@
+{
+  "name": "guess-the-final-score",
+  "authors": [
+    "Alexis Ibarra <ar.ibarrasalas@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
