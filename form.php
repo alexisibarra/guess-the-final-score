@@ -11,11 +11,17 @@
     <div class="form-container col-sm-6 col-sm-offset-6 text-center">
       <img class="centered main-partner" src="images/2.png" alt="">
       <h1 class="main-title">Guess the final score</h1>
+      <?php
+        $equipos = explode("_", $_GET['encuentro']);
+      ?>
+
       <div class="vs centered">
-        <img src="images/3.png" height="70px" width="70px" alt="">
+        <img src="images/<? echo $equipos[0]; ?>.png" height="70px" width="70px" alt="">
         <span>vs</span>
-        <img src="images/4.png"  height="70px" width="70px" alt="">
+        <img src="images/<? echo $equipos[0]; ?>.png"  height="70px" width="70px" alt="">
       </div>
+      
+
 
       <div class="form row">
         <form action="sender.php" method="post">

@@ -27,12 +27,53 @@
         </li>
         <li>
           <form action="form.php" method="get">
-            <select class="form-control" required>
+            <select class="form-control" name="encuentro" required>
               <option value="">Visitor vs Home</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
+              <?php
+                $encuentros = array(
+                  "Pittsburgh, Washington", 
+                  "Carolina, Denver", 
+                  "New York, Buffalo", 
+                  "Philadelphia, Chicago", 
+                  "Houston, New England", 
+                  "Atlanta, New Orleans", 
+                  "Miami, Cincinnati", 
+                  "New York, Minnesota", 
+                  "Arizona, San Francisco", 
+                  "Tampa Bay, Carolina", 
+                  "Denver, San Diego", 
+                  "New York, Arizona", 
+                  "Chicago, Green Bay", 
+                  "Houston, Denver", 
+                  "Jacksonville, Tennessee", 
+                  "Minnesota, Chicago", 
+                  "Atlanta, Tampa Bay", 
+                  "Buffalo, Seattle", 
+                  "Cleveland, Baltimore", 
+                  "Cincinnati, New York", 
+                  "New Orleans, Carolina", 
+                  "Houston, Oakland", 
+                  "Pittsburgh, Indianapolis", 
+                  "Green Bay, Philadelphia", 
+                  "Dallas, Minnesota", 
+                  "Indianapolis, New York", 
+                  "Oakland, Kansas City", 
+                  "Baltimore, New England", 
+                  "Los Angeles, Seattle", 
+                  "Carolina, Washington", 
+                  "New York, Philadelphia", 
+                  "Detroit, Dallas");
+
+
+
+                foreach ($encuentros as &$encuentro) {
+                  $value_spaces = str_replace(' ', '', $encuentro);
+                  $value_commas = str_replace(',', '_', $value_spaces);
+                  $value = strtolower($value_commas);
+                  
+                  echo "<option value=". $value .">". $encuentro ."</option>";
+                }
+              ?>
             </select>
 
             <button type="submit" class="btn btn-default pull-right">Siguiente</button>
