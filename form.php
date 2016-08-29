@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Guess the final score</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.v1.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
