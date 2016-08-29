@@ -52,49 +52,50 @@ body {
       font-size: 32px; }
     .main-row .form-container .vs {
       margin: 30px; }
-      .main-row .form-container .vs span {
-        margin: 50px; }
-    .main-row .form-container .form form .form-group .form-control {
-      border: 2px solid #3F51B5;
-      color: #3F51B5; }
-    .main-row .form-container .form form .checkbox {
-      margin-top: 15px; }
-      .main-row .form-container .form form .checkbox span {
-        font-size: 8pt;
-        color: red; }
-      .main-row .form-container .form form .checkbox label {
+      .main-row .form-container .vs .form-control {
+        border: 2px solid #3F51B5;
+        color: #3F51B5; }
+    .main-row .form-container .form form .form-group {
+      margin-top: 10px; }
+      .main-row .form-container .form form .form-group .form-control {
+        border: 2px solid #3F51B5;
+        color: #3F51B5; }
+    .main-row .form-container .form form .checkbox span {
+      font-size: 8pt;
+      color: red; }
+    .main-row .form-container .form form .checkbox label {
+      display: block;
+      text-transform: uppercase;
+      color: #3F51B5;
+      font-weight: bold;
+      font-size: 12pt; }
+      .main-row .form-container .form form .checkbox label input[type="checkbox"]:before {
+        left: -10px;
+        top: -6px;
+        position: relative;
         display: block;
-        text-transform: uppercase;
+        width: 25px;
+        height: 25px;
+        border: 8px solid #3F51B5;
+        content: "";
+        background: #FFF; }
+      .main-row .form-container .form form .checkbox label input[type="checkbox"]:after {
+        left: -10px;
+        top: -31px;
+        padding-top: 3px;
+        padding-left: 5px;
+        position: relative;
+        display: block;
+        width: 25px;
+        height: 25px;
+        border: 2px solid #3F51B5;
+        content: "";
+        background-color: white;
+        background-repeat: no-repeat; }
+      .main-row .form-container .form form .checkbox label input[type="checkbox"]:checked:after {
+        content: "X";
         color: #3F51B5;
-        font-weight: bold;
-        font-size: 12pt; }
-        .main-row .form-container .form form .checkbox label input[type="checkbox"]:before {
-          left: -10px;
-          top: -6px;
-          position: relative;
-          display: block;
-          width: 25px;
-          height: 25px;
-          border: 8px solid #3F51B5;
-          content: "";
-          background: #FFF; }
-        .main-row .form-container .form form .checkbox label input[type="checkbox"]:after {
-          left: -10px;
-          top: -31px;
-          padding-top: 3px;
-          padding-left: 5px;
-          position: relative;
-          display: block;
-          width: 25px;
-          height: 25px;
-          border: 2px solid #3F51B5;
-          content: "";
-          background-color: white;
-          background-repeat: no-repeat; }
-        .main-row .form-container .form form .checkbox label input[type="checkbox"]:checked:after {
-          content: "X";
-          color: #3F51B5;
-          font-weight: bold; }
+        font-weight: bold; }
     .main-row .form-container .form form button[type="submit"] {
       background-color: red;
       font-size: 12pt;

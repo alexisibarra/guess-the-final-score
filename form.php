@@ -15,16 +15,24 @@
         $equipos = explode("_", $_GET['encuentro']);
       ?>
 
-      <div class="vs centered">
-        <img src="images/<? echo $equipos[0]; ?>.png" height="70px" width="70px" alt="">
-        <span>vs</span>
-        <img src="images/<? echo $equipos[1]; ?>.png"  height="70px" width="70px" alt="">
-      </div>
       
-
-
       <div class="form row">
         <form action="sender.php" method="post">
+
+          <div class="col-sm-12 vs centered">
+            <div class="col-sm-2 form-group">
+              <input type="number" class="form-control" name="home-marker" required="true">
+            </div>
+
+            <img class="col-sm-2" src="images/<? echo $equipos[0]; ?>.png" height="70px" width="70px" alt="">
+            <span class="col-sm-2" >vs</span>
+            <img class="col-sm-2"  src="images/<? echo $equipos[1]; ?>.png"  height="70px" width="70px" alt="">
+
+            <div class="col-sm-2 form-group">
+              <input type="number" class="form-control" name="visitor-marker" required="true">
+            </div>
+          </div>
+
           <div class="col-sm-4 col-sm-offset-2">
             <div class="form-group">
               <input type="text" class="form-control" name="name" id="name" placeholder="NAME" required="true">
@@ -32,13 +40,13 @@
             <div class="form-group">
               <input type="email" class="form-control" name="email" id="email" placeholder="EMAIL"  required="true">
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="marker" id="marker" placeholder="MARKER" required="true">
-            </div>
           </div>
           <div class=col-sm-4>
             <div class="checkbox">
               <label>
+                <input type="hidden" name="home" value="<? echo $equipos[0]; ?>">
+                <input type="hidden" name="visitor" value="<? echo $equipos[1]; ?>">
+
                 <input type="checkbox"  required="true"> Rules and cond
               </label>
               <span>Terms and conditions of the promotion</span>

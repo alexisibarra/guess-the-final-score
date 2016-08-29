@@ -18,6 +18,9 @@ $server_protocol  = 'ssl';
 // Email info
 $email_subject = "Guess the final score";
 $email_body = '<h1>Alguien ha respondido la encuesta "Guess the final score", sus datos son:</h1>' .
+      '<p><b>Home: </b>'. $_POST['home'] .'</p>'.
+      '<p><b>Visitor: </b>'. $_POST['visitor'] .'</p>'.
+      '<p><b>Marcador (Home/Visitor): </b>'. $_POST['home-marker'] . '/' . $_POST['visitor-marker'] .'</p>'.
       '<p><b>Name: </b>'. $_POST['name'] .'</p>'.
       '<p><b>Email: </b>'. $_POST['email'] .'</p>'.
       '<p><b>Marker: </b>'. $_POST['marker'] .'</p>';
