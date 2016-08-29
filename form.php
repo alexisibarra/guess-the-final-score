@@ -18,7 +18,7 @@
       <div class="vs centered">
         <img src="images/<? echo $equipos[0]; ?>.png" height="70px" width="70px" alt="">
         <span>vs</span>
-        <img src="images/<? echo $equipos[0]; ?>.png"  height="70px" width="70px" alt="">
+        <img src="images/<? echo $equipos[1]; ?>.png"  height="70px" width="70px" alt="">
       </div>
       
 
