@@ -10,45 +10,42 @@
   <div class="main-row row">
     <div class="form-container col-sm-6 col-sm-offset-6 text-center">
       <img class="centered main-partner" src="images/2.png" alt="">
-      <h1 class="main-title">Guess the final score</h1>
-      <div class="vs centered">
-        <img src="images/3.png" height="70px" width="70px" alt="">
-        <span>vs</span>
-        <img src="images/4.png"  height="70px" width="70px" alt="">
-      </div>
+      <h1 class="main-title">Participa y gana</h1>
 
-      <div class="form row">
-        <form action="sender.php" method="post">
-          <div class="col-sm-4 col-sm-offset-2">
-            <div class="form-group">
-              <input type="text" class="form-control" name="name" id="name" placeholder="NAME" required="true">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="EMAIL"  required="true">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="marker" id="marker" placeholder="MARKER" required="true">
-            </div>
-          </div>
-          <div class=col-sm-4>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"  required="true"> Rules and cond
-              </label>
-              <span>Terms and conditions of the promotion</span>
-            </div>
+      <ul class="instrucciones text-left">
+        <li>
+          <span class="number">1</span>
+          <span class="instruccion">Selecciona el partido</span>
+        </li>
+        <li>
+          <span class="number">2</span>
+          <span class="instruccion">Ingresa en las casillas cual sera el marcador final</span>
+        </li>
+        <li>
+          <span class="number">3</span>
+          <span class="instruccion">Ingresa tu nombre, apellido y correo electronico</span>
+        </li>
+        <li>
+          <form action="form.php" method="get">
+            <select class="form-control" required>
+              <option value="">Visitor vs Home</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
 
-            <button type="submit" class="btn btn-default">Submit</button>
-          </div>
-        </form>
-      </div>
+            <button type="submit" class="btn btn-default pull-right">Siguiente</button>
 
-      <div class="prizes">
-        <span class="tag">Prizes</span>
-        <img src="images/5.png"  height="70px" width="70px" alt="">
-        <img src="images/6.png"  height="70px" width="70px" alt="">
-        <img src="images/7.png"  height="70px" width="70px" alt="">
-      </div>
+            <div class="clearfix"></div>
+
+          </form>
+        </li>
+
+      </ul>
+
+
+
 
       <div class="sponsors text-center">
         <img src="images/8.png"  height="70px" width="70px" alt="">

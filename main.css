@@ -22,6 +22,30 @@ body {
     position: relative;
     height: 100%;
     padding: 20px 10px; }
+    .main-row .form-container .instrucciones {
+      font-size: 24px;
+      margin-left: 15%;
+      list-style: none;
+      margin-top: 75px;
+      margin-bottom: 120px; }
+      .main-row .form-container .instrucciones li .number {
+        color: red;
+        margin-right: 15px; }
+      .main-row .form-container .instrucciones li .instruccion {
+        font-size: 16px;
+        color: #3F51B5; }
+      .main-row .form-container .instrucciones li form {
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        .main-row .form-container .instrucciones li form select {
+          width: 250px; }
+        .main-row .form-container .instrucciones li form button {
+          background-color: red;
+          font-size: 12pt;
+          color: white;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-right: 20%; }
     .main-row .form-container .main-title, .main-row .form-container .vs {
       text-transform: uppercase;
       color: red;
